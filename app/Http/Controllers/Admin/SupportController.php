@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Support;
+use Dotenv\Util\Str;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
@@ -12,6 +13,14 @@ class SupportController extends Controller
         $supports = $support->all();
 
         return view('admin/supports/index', compact('supports'));
+    }
+
+    public function show(string|int $id) {
+        if(!$support = Support::find($id)) {
+            return redirect()->back();
+        }
+
+        return view('admin/supports/show', compact('support'));
     }
 
     public function create() {
