@@ -1,5 +1,7 @@
 <h1>Nova Dúvida</h1>
 
+<a href="{{route('supports.index') }}">Voltar para as dúvidas</a>
+
 <form action="{{ route('supports.store') }}" method="POST">
     {{-- <input type="hidden" value="{{csrf_token() }}" name="_token"> --}}
     @csrf()
