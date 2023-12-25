@@ -1,5 +1,13 @@
 <h1>Dúvida: {{$support->id}}</h1>
 
+@if($errors->any())
+
+    @foreach($errors->all() as $error)
+        {{$error}}
+    @endforeach
+
+@endif
+
 <a href="{{route('supports.index') }}">Voltar para as dúvidas</a>
 
 <form action="{{ route('supports.update', $support->id) }}" method="POST">
