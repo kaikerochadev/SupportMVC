@@ -24,7 +24,7 @@ class SupportEloquentORM implements SupportRepositoryInterface
                 $query->where('subject', $filter);
                 $query->orWhere('body', 'like', "%{$filter}%");
             }
-        })->all()->toArray();
+        })->get()->toArray();
     }
 
     public function findOne(string $id): stdClass|null
