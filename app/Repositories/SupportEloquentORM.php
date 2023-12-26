@@ -1,10 +1,12 @@
 <?php
 
+namespace App\Repositories;
+
 use App\DTO\CreateSupportDTO;
 use App\DTO\UpdateSupportDTO;
 use App\Models\Support;
 use App\Repositories\SupportRepositoryInterface;
-use PhpParser\Node\Stmt\Return_;
+use stdClass;
 
 class SupportEloquentORM implements SupportRepositoryInterface
 {
