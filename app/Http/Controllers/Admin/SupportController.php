@@ -19,6 +19,8 @@ class SupportController extends Controller
     public function index(Request $request) {
         $supports = $this->service->getAll($request->filter);
 
+        dd($supports);
+
         return view('admin/supports/index', compact('supports'));
     }
 
