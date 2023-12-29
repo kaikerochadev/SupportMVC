@@ -3,6 +3,7 @@
 @section('title', 'Forúm')
 
 @section('header')
+@include('admin/supports/partials/header', compact('supports'))
 <h1>Listagem dos Suportes</h1>
 @endsection
 
