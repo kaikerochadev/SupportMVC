@@ -9,19 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="container px-4 mx-auto">
+    <section class="container px-4 mx-auto py-4">
 
         <div class="content">
             @yield('header')
         <div>
     
         <div>
+            <x-messages/>
             @yield('content')
         </div>
-    
-        <footer>
-            Footer
-        </footer>
     </section>
 </body>
 </html>
