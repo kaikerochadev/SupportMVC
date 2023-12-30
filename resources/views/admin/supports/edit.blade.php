@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 <x-alert/>
-@section('title', 'Criar Novo Tópico')
+@section('title', "Editar a Dúvida $support->subject")
 
 @section('header')
 
