@@ -1,7 +1,7 @@
 
 # MVC - Nódulo de Suportes
 
-Esse projeto foi desenvolvido atráves do curso de Laravel 10 do EspecializaTi. <br/> <br/>
+Esse projeto foi desenvolvido através do curso de Laravel 10 do EspecializaTi. <br/> <br/>
 O projeto apresenta um sistema CRUD completo que permite a criação, leitura, edição e exclusão de dúvidas. Além disso, conta com paginação das dúvidas e um status para cada dúvida.
 <br/> <br/>
 Este projeto foi desenvolvido utilizando PHP, Laravel, Docker e MySQL para garantir um sistema robusto e eficiente.
