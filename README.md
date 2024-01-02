@@ -4,7 +4,7 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone -b laravel-10-com-php-8.3 https://github.com/especializati/setup-docker-laravel.git app-laravel
+git clone -b supportMVC https://github.com/kaikerochadev/SuporteMVC.git mvc-laravel
 ```
 ```sh
 cd app-laravel
