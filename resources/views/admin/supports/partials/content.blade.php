@@ -50,7 +50,7 @@
                                 <a href="{{ route('supports.edit', $support->id) }}" class="px-1 py-1 text-gray-500 transition-colors duration-200 rounded-lg">
                                     <p style="color: #D3D3D3">Editar</p>
                                 </a>
-                                <a href="{{ route('supports.show', $support->id) }}" class="px-1 py-1 text-gray-500 transition-colors duration-200 rounded-lg">
+                                <a href="{{ route('replies.index', $support->id) }}" class="px-1 py-1 text-gray-500 transition-colors duration-200 rounded-lg">
                                     <p class="text-emerald-500 gap-x-2">Ver detalhes</p>
                                 </a>
                             </td>
