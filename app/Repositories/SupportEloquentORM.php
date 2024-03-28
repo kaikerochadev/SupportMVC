@@ -6,6 +6,7 @@ use App\DTO\Supports\CreateSupportDTO;
 use App\DTO\Supports\UpdateSupportDTO;
 use App\Models\Support;
 use App\Repositories\SupportRepositoryInterface;
+use Faker\Core\Uuid;
 use stdClass;
 
 class SupportEloquentORM implements SupportRepositoryInterface
