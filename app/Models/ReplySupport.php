@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ReplySupport extends Model
 {
@@ -14,11 +13,19 @@ class ReplySupport extends Model
 
     protected $table = 'replies_support';
 
-    public function user(): BelongsTo {
+    protected $fillable = [
+        'user_id',
+        'support_id',
+        'content',
+    ];
+
+    public function user(): BelongsTo
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function support(): BelongsTo {
+    public function support(): BelongsTo
+    {
         return $this->belongsTo(Support::class);
     }
 }
